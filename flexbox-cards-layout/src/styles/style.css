@@ -1,0 +1,55 @@
+/* filepath: flexbox-cards-layout/src/styles/style.css */
+
+/* Reset CSS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styles */
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container for the cards */
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+}
+
+/* Individual card styles */
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 30%;
+    margin: 15px;
+    padding: 20px;
+    transition: transform 0.3s;
+}
+
+/* Hover effect for cards */
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Card title styles */
+.card h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+/* Card content styles */
+.card p {
+    font-size: 1em;
+    color: #555;
+}
